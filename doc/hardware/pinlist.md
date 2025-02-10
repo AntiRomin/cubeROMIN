@@ -1,0 +1,403 @@
+Pin used at core borad:
+| Pin | Used | Mode | Detail |
+| - | - | - | - |
+| PA0 | Y | Input | Key1 / Wake Up Key |
+| PA9 | Y | AF UART | UART1_TX |
+| PA10 | Y | AF UART | UART1_RX |
+| PA13 | Y | DEBUG | TMG |
+| PA14 | Y | DEBUG | TCK |
+| PB2 | Y | AF QUADSPI | QSPI_CLK |
+| PB8 | Y | AF I2C | EEPROM_SCL |
+| PB9 | Y | AF I2C | EEPROM_SDA |
+| PB14 | Y | AF USB_OTG | USB_OTG_HS_DM |
+| PB15 | Y | AF USB_OTG | USB_OTG_HS_DP |
+| PC0 | Y | AF FMC | SDRAM_FMC_SDNWE |
+| PC13 | Y | Input | Key2 |
+| PC14 | Y | OSC32 | OSC32_IN |
+| PC15 | Y | OSC32 | OSC32_OUT |
+| PD0 | M | AF FMC | SDRAM_FMC_D2 / NAND_FMC_D2 |
+| PD1 | M | AF FMC | SDRAM_FMC_D3 / NAND_FMC_D3 |
+| PD4 | Y | AF FMC | NAND_FMC_NOE |
+| PD5 | Y | AF FMC | NAND_FMC_NWE |
+| PD6 | Y | AF FMC | NAND_FMC_NWAIT |
+| PD8 | Y | AF FMC | SDRAM_FMC_D13 |
+| PD9 | Y | AF FMC | SDRAM_FMC_D14 |
+| PD10 | Y | AF FMC | SDRAM_FMC_D15 |
+| PD11 | Y | AF FMC | NAND_FMC_CLE |
+| PD12 | Y | AF FMC | NAND_FMC_ALE |
+| PD13 | Y | Output | LCD_BL |
+| PD14 | M | AF FMC | SDRAM_FMC_D0 / NAND_FMC_D0 |
+| PD15 | M | AF FMC | SDRAM_FMC_D1 / NAND_FMC_D1 |
+| PE0 | Y | AF FMC | SDRAM_FMC_NBL0 |
+| PE1 | Y | AF FMC | SDRAM_FMC_NBL1 |
+| PE7 | M | AF FMC | SDRAM_FMC_D4 / NAND_FMC_D4 |
+| PE8 | M | AF FMC | SDRAM_FMC_D5 / NAND_FMC_D5 |
+| PE9 | M | AF FMC | SDRAM_FMC_D6 / NAND_FMC_D6 |
+| PE10 | M | AF FMC | SDRAM_FMC_D7 / NAND_FMC_D7 |
+| PE11 | Y | AF FMC | SDRAM_FMC_D8 |
+| PE12 | Y | AF FMC | SDRAM_FMC_D9 |
+| PE13 | Y | AF FMC | SDRAM_FMC_D10 |
+| PE14 | Y | AF FMC | SDRAM_FMC_D11 |
+| PE15 | Y | AF FMC | SDRAM_FMC_D12 |
+| PF0 | Y | AF FMC | SDRAM_FMC_A0 |
+| PF1 | Y | AF FMC | SDRAM_FMC_A1 |
+| PF2 | Y | AF FMC | SDRAM_FMC_A2 |
+| PF3 | Y | AF FMC | SDRAM_FMC_A3 |
+| PF4 | Y | AF FMC | SDRAM_FMC_A4 |
+| PF5 | Y | AF FMC | SDRAM_FMC_A5 |
+| PF6 | Y | AF QUADSPI | QSPI_BK1_IO3 |
+| PF7 | Y | AF QUADSPI | QSPI_BK1_IO2 |
+| PF8 | Y | AF QUADSPI | QSPI_BK1_IO0 |
+| PF9 | Y | AF QUADSPI | QSPI_BK1_IO1 |
+| PF11 | Y | AF FMC | SDRAM_FMC_SDNRAS |
+| PF12 | Y | AF FMC | SDRAM_FMC_A6 |
+| PF13 | Y | AF FMC | SDRAM_FMC_A7 |
+| PF14 | Y | AF FMC | SDRAM_FMC_A8 |
+| PF15 | Y | AF FMC | SDRAM_FMC_A9 |
+| PG0 | Y | AF FMC | SDRAM_FMC_A10 |
+| PG1 | Y | AF FMC | SDRAM_FMC_A11 |
+| PG2 | Y | AF FMC | SDRAM_FMC_A12 |
+| PG3 | Y | Event | TOUCHPAD_INT |
+| PG4 | Y | AF FMC | SDRAM_FMC_BA0 |
+| PG5 | Y | AF FMC | SDRAM_FMC_BA1 |
+| PG6 | Y | AF QUADSPI | QSPI_BK1_NCS |
+| PG7 | Y | Output | TOUCHPAD_RST |
+| PG8 | Y | AF FMC | SDRAM_FMC_SDCLK |
+| PG9 | M | AF FMC / AF QUADSPI | NAND_FMC_NCE / QSPI_BK2_IO2 |
+| PG14 | Y | AF QUADSPI | QSPI_BK2_IO3 |
+| PG15 | Y | AF FMC | SDRAM_FMC_SDNCAS |
+| PH0 | Y | OSC | OSC_IN |
+| PH1 | Y | OSC | OSC_OUT |
+| PH2 | Y | AF QUADSPI | QSPI_BK2_IO0 |
+| PH3 | Y | AF QUADSPI | QSPI_BK2_IO1 |
+| PH4 | Y | AF I2C | TOUCHPAD_SCL |
+| PH5 | Y | AF I2C | TOUCHPAD_SDA |
+| PH6 | Y | AF FMC | SDRAM_FMC_SDNE1 |
+| PH7 | Y | AF FMC | SDRAM_FMC_SDCKE1 |
+| PH8 | Y | AF FMC | SDRAM_FMC_D16 |
+| PH9 | Y | AF FMC | SDRAM_FMC_D17 |
+| PH10 | Y | AF FMC | SDRAM_FMC_D18 |
+| PH11 | Y | AF FMC | SDRAM_FMC_D19 |
+| PH12 | Y | AF FMC | SDRAM_FMC_D20 |
+| PH13 | Y | AF FMC | SDRAM_FMC_D21 |
+| PH14 | Y | AF FMC | SDRAM_FMC_D22 |
+| PH15 | Y | AF FMC | SDRAM_FMC_D23 |
+| PI0 | Y | AF FMC | SDRAM_FMC_D24 |
+| PI1 | Y | AF FMC | SDRAM_FMC_D25 |
+| PI2 | Y | AF FMC | SDRAM_FMC_D26 |
+| PI3 | Y | AF FMC | SDRAM_FMC_D27 |
+| PI4 | Y | AF FMC | SDRAM_FMC_NBL2 |
+| PI5 | Y | AF FMC | SDRAM_FMC_NBL3 |
+| PI6 | Y | AF FMC | SDRAM_FMC_D28 |
+| PI7 | Y | AF FMC | SDRAM_FMC_D29 |
+| PI9 | Y | AF FMC | SDRAM_FMC_D30 |
+| PI10 | Y | AF FMC | SDRAM_FMC_D31 |
+| PI12 | Y | AF LCD | LCD_HSYNC |
+| PI13 | Y | AF LCD | LCD_VSYNC |
+| PI14 | Y | AF LCD | LCD_CLK |
+| PI15 | Y | AF LCD | LCD_R0 |
+| PJ0 | Y | AF LCD | LCD_R1 |
+| PJ1 | Y | AF LCD | LCD_R2 |
+| PJ2 | Y | AF LCD | LCD_R3 |
+| PJ3 | Y | AF LCD | LCD_R4 |
+| PJ4 | Y | AF LCD | LCD_R5 |
+| PJ5 | Y | AF LCD | LCD_R6 |
+| PJ6 | Y | AF LCD | LCD_R7 |
+| PJ7 | Y | AF LCD | LCD_G0 |
+| PJ8 | Y | AF LCD | LCD_G1 |
+| PJ9 | Y | AF LCD | LCD_G2 |
+| PJ10 | Y | AF LCD | LCD_G3 |
+| PJ11 | Y | AF LCD | LCD_G4 |
+| PJ12 | Y | AF LCD | LCD_B0 |
+| PJ13 | Y | AF LCD | LCD_B1 |
+| PJ14 | Y | AF LCD | LCD_B2 |
+| PJ15 | Y | AF LCD | LCD_B3 |
+| PK0 | Y | AF LCD | LCD_G5 |
+| PK1 | Y | AF LCD | LCD_G6 |
+| PK2 | Y | AF LCD | LCD_G7 |
+| PK3 | Y | AF LCD | LCD_B4 |
+| PK4 | Y | AF LCD | LCD_B5 |
+| PK5 | Y | AF LCD | LCD_B6 |
+| PK6 | Y | AF LCD | LCD_B7 |
+| PK7 | Y | AF LCD | LCD_DE |
+
+Pin used at matherboard:
+| Pin | Used | Mode | Detail |
+| - | - | - | - |
+| PA0 | Y | Input | Key1 / Wake Up Key |
+| PA1 | Y | AF ETH_RMII | ETH_RMII_REF_CLK |
+| PA2 | Y | AF ETH_RMII | ETH_RMII_MDIO |
+| PA3 | Y | AF TIM / Output | LED_B |
+| PA4 | Y | AF DCMI | DCMI_HSYNC |
+| PA5 | Y | AF TIM | TPAD_KEY |
+| PA6 | Y | AF DCMI | DCMI_PIXCLK |
+| PA7 | Y | AF ETH_RMII | ETH_RMII_CSR_DV |
+| PA9 | Y | AF UART | UART1_TX |
+| PA10 | Y | AF UART | UART1_RX |
+| PA11 | Y | AF TIM | IR_CAPTURE |
+| PA12 | Y | Input / Output | DHT11_DATA |
+| PA13 | Y | DEBUG | JTMS |
+| PA14 | Y | DEBUG | JTCK |
+| PA15 | Y | DEBUG | JTDI |
+| PB0 | Y | AF TIM / Output | LED_R |
+| PB1 | Y | AF TIM / Output | LED_G |
+| PB3 | Y | DEBUG | JTDO |
+| PB4 | Y | DEBUG | JTRST |
+| PB5 | Y | AF FDCAN | CAN_RX |
+| PB6 | Y | AF FDCAN | CAN_TX |
+| PB7 | Y | AF DCMI | DCMI_VSYNC |
+| PB8 | Y | AF I2C | CAMERA_SCL / MPU6050_SCL / AP3216C_SCL / WM8978_SCL |
+| PB9 | Y | AF I2C | CAMERA_SDA / MPU6050_SDA / AP3216C_SDA / WM8978_SDA |
+| PB10 | Y | Output | CAMERA_PWDN |
+| PB11 | Y | AF ETH_RMII | ETH_RMII_TXEN |
+| PB12 | M | AF USB_OTG / AF UART | USB_OTG_HS_ID / UART5_RX |
+| PB13 | Y | AF UART | UART5_TX |
+| PB14 | Y | AF USB_OTG | USB_OTG_HS_DM |
+| PB15 | Y | AF USB_OTG | USB_OTG_HS_DP |
+| PC1 | Y | AF ETH | ETH_MDC |
+| PC2_C | N | N | - |
+| PC2 | Y | Output | WL_REG_ON |
+| PC3_C | Y | Analog | ADC3_INP1 |
+| PC3 | Y | Event | MPU6050_INT |
+| PC4 | Y | AF ETH | ETH_RMII_RXD0 |
+| PC5 | Y | AF ETH | ETH_RMII_RXD1 |
+| PC6 | Y | AF DCMI | DCMI_D0 |
+| PC7 | Y | AF DCMI | DCMI_D1 |
+| PC8 | M | AF SDIO | WIFI_SDIO_D0 / SDCARD_SDIO_D0 |
+| PC9 | M | AF SDIO | WIFI_SDIO_D1 / SDCARD_SDIO_D1 |
+| PC10 | M | AF SDIO | WIFI_SDIO_D2 / SDCARD_SDIO_D2 |
+| PC11 | M | AF SDIO | WIFI_SDIO_D3 / SDCARD_SDIO_D3 |
+| PC12 | M | AF SDIO | WIFI_SDIO_CLK / SDCARD_SDIO_CLK |
+| PC13 | Y | Input | Key2 |
+| PD2 | M | AF SDIO | WIFI_SDIO_CMD / SDCARD_SDIO_CMD |
+| PD3 | Y | AF DCIM | DCIM_D5 |
+| PD4 | Y | AF USART | USART2_DE |
+| PD5 | Y | AF USART | USART2_TX |
+| PD6 | Y | AF USART | USART2_RX |
+| PD7 | M | AF SAI / Event / Output | SPDIFRX_IN / AP3216C_INT/ LCD_BL_ON |
+| PD11 | Y | Input / Output | GPIO1 |
+| PD12 | Y | Input / Output | GPIO2 |
+| PD13 | Y | Output | LCD_BL |
+| PE2 | Y | AF SAI | SAI_MCLK_A |
+| PE3 | Y | AF SAI | SAI_SD_B |
+| PE4 | M | AF DCMI / AF SAI | DCMI_D4 / SAI_FS_A |
+| PE5 | M | AF DCMI / AF SAI | DCMI_D6 / SAI_SCK_A |
+| PE6 | M | AF DCMI / AF SAI | DCMI_D7 / SAI_SD_A |
+| PF10 | Y | Output | CAMERA_RST |
+| PG3 | Y | Event | TOUCHPAD_INT |
+| PG7 | Y | Output | TOUCHPAD_RST |
+| PG10 | Y | AF DCMI | DCMI_D2 |
+| PG11 | Y | AF DCMI | DCMI_D3 |
+| PG12 | Y | AF ETH_RMII | ETH_RMII_TXD1 |
+| PG13 | Y | AF ETH_RMII | ETH_RMII_TXD0 |
+| PH4 | Y | AF I2C | TOUCHPAD_SCL |
+| PH5 | Y | AF I2C | TOUCHPAD_SDA |
+| PH6 | Y | AF FMC | SDRAM_FMC_SDNE1 |
+| PI8 | Y | AF TIM | BEEP |
+| PI11 | Y | Event | WIFI_INT |
+| PI12 | Y | AF LCD | LCD_HSYNC |
+| PI13 | Y | AF LCD | LCD_VSYNC |
+| PI14 | Y | AF LCD | LCD_CLK |
+| PI15 | Y | AF LCD | LCD_R0 |
+| PJ0 | Y | AF LCD | LCD_R1 |
+| PJ1 | Y | AF LCD | LCD_R2 |
+| PJ2 | Y | AF LCD | LCD_R3 |
+| PJ3 | Y | AF LCD | LCD_R4 |
+| PJ4 | Y | AF LCD | LCD_R5 |
+| PJ5 | Y | AF LCD | LCD_R6 |
+| PJ6 | Y | AF LCD | LCD_R7 |
+| PJ7 | Y | AF LCD | LCD_G0 |
+| PJ8 | Y | AF LCD | LCD_G1 |
+| PJ9 | Y | AF LCD | LCD_G2 |
+| PJ10 | Y | AF LCD | LCD_G3 |
+| PJ11 | Y | AF LCD | LCD_G4 |
+| PJ12 | Y | AF LCD | LCD_B0 |
+| PJ13 | Y | AF LCD | LCD_B1 |
+| PJ14 | Y | AF LCD | LCD_B2 |
+| PJ15 | Y | AF LCD | LCD_B3 |
+| PK0 | Y | AF LCD | LCD_G5 |
+| PK1 | Y | AF LCD | LCD_G6 |
+| PK2 | Y | AF LCD | LCD_G7 |
+| PK3 | Y | AF LCD | LCD_B4 |
+| PK4 | Y | AF LCD | LCD_B5 |
+| PK5 | Y | AF LCD | LCD_B6 |
+| PK6 | Y | AF LCD | LCD_B7 |
+| PK7 | Y | AF LCD | LCD_DE |
+
+
+All Pin List:
+
+| Pin | Used | Mode | Detail |
+| - | - | - | - |
+| PA0_C | N | - | - |
+| PA0 | Y | Input | Key1 / Wake Up Key |
+| PA1_C | N | - | - |
+| PA1 | Y | AF ETH_RMII | ETH_RMII_REF_CLK |
+| PA2 | Y | AF ETH_RMII | ETH_RMII_MDIO |
+| PA3 | Y | AF TIM / Output | LED_B |
+| PA4 | Y | AF DCMI | DCMI_HSYNC |
+| PA5 | Y | AF TIM | TPAD_KEY |
+| PA6 | Y | AF DCMI | DCMI_PIXCLK |
+| PA7 | Y | AF ETH_RMII | ETH_RMII_CSR_DV |
+| PA8 | N | - | - |
+| PA9 | Y | AF UART | UART1_TX |
+| PA10 | Y | AF UART | UART1_RX |
+| PA11 | Y | AF TIM | IR_CAPTURE |
+| PA12 | Y | Input / Output | DHT11_DATA |
+| PA13 | Y | DEBUG | JTMS |
+| PA14 | Y | DEBUG | JTCK |
+| PA15 | Y | DEBUG | JTDI |
+| PB0 | Y | AF TIM / Output | LED_R |
+| PB1 | Y | AF TIM / Output | LED_G |
+| PB2 | Y | AF QUADSPI | QSPI_CLK |
+| PB3 | Y | DEBUG | JTDO |
+| PB4 | Y | DEBUG | JTRST |
+| PB5 | Y | AF FDCAN | CAN_RX |
+| PB6 | Y | AF FDCAN | CAN_TX |
+| PB7 | Y | AF DCMI | DCMI_VSYNC |
+| PB8 | Y | AF I2C | EEPROM_SCL / CAMERA_SCL / MPU6050_SCL / AP3216C_SCL / WM8978_SCL |
+| PB9 | Y | AF I2C | EEPROM_SDA / CAMERA_SDA / MPU6050_SDA / AP3216C_SDA / WM8978_SDA |
+| PB10 | Y | Output | CAMERA_PWDN |
+| PB11 | Y | AF ETH_RMII | ETH_RMII_TXEN |
+| PB12 | M | AF USB_OTG / AF UART | USB_OTG_HS_ID / UART5_RX |
+| PB13 | Y | AF UART | UART5_TX |
+| PB14 | Y | AF USB_OTG | USB_OTG_HS_DM |
+| PB15 | Y | AF USB_OTG | USB_OTG_HS_DP |
+| PC0 | Y | AF FMC | SDRAM_FMC_SDNWE |
+| PC1 | Y | AF ETH | ETH_MDC |
+| PC2_C | N | - | - |
+| PC2 | Y | Output | WL_REG_ON |
+| PC3_C | Y | Analog | ADC3_INP1 |
+| PC3 | Y | Event | MPU6050_INT |
+| PC4 | Y | AF ETH | ETH_RMII_RXD0 |
+| PC5 | Y | AF ETH | ETH_RMII_RXD1 |
+| PC6 | Y | AF DCMI | DCMI_D0 |
+| PC7 | Y | AF DCMI | DCMI_D1 |
+| PC8 | M | AF SDIO | WIFI_SDIO_D0 / SDCARD_SDIO_D0 |
+| PC9 | M | AF SDIO | WIFI_SDIO_D1 / SDCARD_SDIO_D1 |
+| PC10 | M | AF SDIO | WIFI_SDIO_D2 / SDCARD_SDIO_D2 |
+| PC11 | M | AF SDIO | WIFI_SDIO_D3 / SDCARD_SDIO_D3 |
+| PC12 | M | AF SDIO | WIFI_SDIO_CLK / SDCARD_SDIO_CLK |
+| PC13 | Y | Input | Key2 |
+| PC14 | Y | OSC32 | OSC32_IN |
+| PC15 | Y | OSC32 | OSC32_OUT |
+| PD0 | M | AF FMC | SDRAM_FMC_D2 / NAND_FMC_D2 |
+| PD1 | M | AF FMC | SDRAM_FMC_D3 / NAND_FMC_D3 |
+| PD2 | M | AF SDIO | WIFI_SDIO_CMD / SDCARD_SDIO_CMD |
+| PD3 | Y | AF DCIM | DCIM_D5 |
+| PD4 | M | AF FMC / AF USART | NAND_FMC_NOE / USART2_DE |
+| PD5 | M | AF FMC / AF USART | NAND_FMC_NWE / USART2_TX |
+| PD6 | M | AF FMC / AF USART | NAND_FMC_NWAIT / USART2_RX |
+| PD7 | M | AF SAI / Event / Output | SPDIFRX_IN / AP3216C_INT/ LCD_BL_ON |
+| PD8 | Y | AF FMC | SDRAM_FMC_D13 |
+| PD9 | Y | AF FMC | SDRAM_FMC_D14 |
+| PD10 | Y | AF FMC | SDRAM_FMC_D15 |
+| PD11 | M | AF FMC / Input / Output | NAND_FMC_CLE / GPIO1 |
+| PD12 | M | AF FMC / Input / Output | NAND_FMC_ALE / GPIO2 |
+| PD13 | Y | Output | LCD_BL |
+| PD14 | M | AF FMC | SDRAM_FMC_D0 / NAND_FMC_D0 |
+| PD15 | M | AF FMC | SDRAM_FMC_D1 / NAND_FMC_D1 |
+| PE0 | Y | AF FMC | SDRAM_FMC_NBL0 |
+| PE1 | Y | AF FMC | SDRAM_FMC_NBL1 |
+| PE2 | Y | AF SAI | SAI_MCLK_A |
+| PE3 | Y | AF SAI | SAI_SD_B |
+| PE4 | M | AF DCMI / AF SAI | DCMI_D4 / SAI_FS_A |
+| PE5 | M | AF DCMI / AF SAI | DCMI_D6 / SAI_SCK_A |
+| PE6 | M | AF DCMI / AF SAI | DCMI_D7 / SAI_SD_A |
+| PE7 | M | AF FMC | SDRAM_FMC_D4 / NAND_FMC_D4 |
+| PE8 | M | AF FMC | SDRAM_FMC_D5 / NAND_FMC_D5 |
+| PE9 | M | AF FMC | SDRAM_FMC_D6 / NAND_FMC_D6 |
+| PE10 | M | AF FMC | SDRAM_FMC_D7 / NAND_FMC_D7 |
+| PE11 | Y | AF FMC | SDRAM_FMC_D8 |
+| PE12 | Y | AF FMC | SDRAM_FMC_D9 |
+| PE13 | Y | AF FMC | SDRAM_FMC_D10 |
+| PE14 | Y | AF FMC | SDRAM_FMC_D11 |
+| PE15 | Y | AF FMC | SDRAM_FMC_D12 |
+| PF0 | Y | AF FMC | SDRAM_FMC_A0 |
+| PF1 | Y | AF FMC | SDRAM_FMC_A1 |
+| PF2 | Y | AF FMC | SDRAM_FMC_A2 |
+| PF3 | Y | AF FMC | SDRAM_FMC_A3 |
+| PF4 | Y | AF FMC | SDRAM_FMC_A4 |
+| PF5 | Y | AF FMC | SDRAM_FMC_A5 |
+| PF6 | Y | AF QUADSPI | QSPI_BK1_IO3 |
+| PF7 | Y | AF QUADSPI | QSPI_BK1_IO2 |
+| PF8 | Y | AF QUADSPI | QSPI_BK1_IO0 |
+| PF9 | Y | AF QUADSPI | QSPI_BK1_IO1 |
+| PF10 | Y | Output | CAMERA_RST |
+| PF11 | Y | AF FMC | SDRAM_FMC_SDNRAS |
+| PF12 | Y | AF FMC | SDRAM_FMC_A6 |
+| PF13 | Y | AF FMC | SDRAM_FMC_A7 |
+| PF14 | Y | AF FMC | SDRAM_FMC_A8 |
+| PF15 | Y | AF FMC | SDRAM_FMC_A9 |
+| PG0 | Y | AF FMC | SDRAM_FMC_A10 |
+| PG1 | Y | AF FMC | SDRAM_FMC_A11 |
+| PG2 | Y | AF FMC | SDRAM_FMC_A12 |
+| PG3 | Y | Event | TOUCHPAD_INT |
+| PG4 | Y | AF FMC | SDRAM_FMC_BA0 |
+| PG5 | Y | AF FMC | SDRAM_FMC_BA1 |
+| PG6 | Y | AF QUADSPI | QSPI_BK1_NCS |
+| PG7 | Y | Output | TOUCHPAD_RST |
+| PG8 | Y | AF FMC | SDRAM_FMC_SDCLK |
+| PG9 | M | AF FMC / AF QUADSPI | NAND_FMC_NCE / QSPI_BK2_IO2 |
+| PG10 | Y | AF DCMI | DCMI_D2 |
+| PG11 | Y | AF DCMI | DCMI_D3 |
+| PG12 | Y | AF ETH_RMII | ETH_RMII_TXD1 |
+| PG13 | Y | AF ETH_RMII | ETH_RMII_TXD0 |
+| PG14 | Y | AF QUADSPI | QSPI_BK2_IO3 |
+| PG15 | Y | AF FMC | SDRAM_FMC_SDNCAS |
+| PH0 | Y | OSC | OSC_IN |
+| PH1 | Y | OSC | OSC_OUT |
+| PH2 | Y | AF QUADSPI | QSPI_BK2_IO0 |
+| PH3 | Y | AF QUADSPI | QSPI_BK2_IO1 |
+| PH4 | Y | AF I2C | TOUCHPAD_SCL |
+| PH5 | Y | AF I2C | TOUCHPAD_SDA |
+| PH6 | Y | AF FMC | SDRAM_FMC_SDNE1 |
+| PH7 | Y | AF FMC | SDRAM_FMC_SDCKE1 |
+| PH8 | Y | AF FMC | SDRAM_FMC_D16 |
+| PH9 | Y | AF FMC | SDRAM_FMC_D17 |
+| PH10 | Y | AF FMC | SDRAM_FMC_D18 |
+| PH11 | Y | AF FMC | SDRAM_FMC_D19 |
+| PH12 | Y | AF FMC | SDRAM_FMC_D20 |
+| PH13 | Y | AF FMC | SDRAM_FMC_D21 |
+| PH14 | Y | AF FMC | SDRAM_FMC_D22 |
+| PH15 | Y | AF FMC | SDRAM_FMC_D23 |
+| PI0 | Y | AF FMC | SDRAM_FMC_D24 |
+| PI1 | Y | AF FMC | SDRAM_FMC_D25 |
+| PI2 | Y | AF FMC | SDRAM_FMC_D26 |
+| PI3 | Y | AF FMC | SDRAM_FMC_D27 |
+| PI4 | Y | AF FMC | SDRAM_FMC_NBL2 |
+| PI5 | Y | AF FMC | SDRAM_FMC_NBL3 |
+| PI6 | Y | AF FMC | SDRAM_FMC_D28 |
+| PI7 | Y | AF FMC | SDRAM_FMC_D29 |
+| PI8 | Y | AF TIM | BEEP |
+| PI9 | Y | AF FMC | SDRAM_FMC_D30 |
+| PI10 | Y | AF FMC | SDRAM_FMC_D31 |
+| PI11 | Y | Event | WIFI_INT |
+| PI12 | Y | AF LCD | LCD_HSYNC |
+| PI13 | Y | AF LCD | LCD_VSYNC |
+| PI14 | Y | AF LCD | LCD_CLK |
+| PI15 | Y | AF LCD | LCD_R0 |
+| PJ0 | Y | AF LCD | LCD_R1 |
+| PJ1 | Y | AF LCD | LCD_R2 |
+| PJ2 | Y | AF LCD | LCD_R3 |
+| PJ3 | Y | AF LCD | LCD_R4 |
+| PJ4 | Y | AF LCD | LCD_R5 |
+| PJ5 | Y | AF LCD | LCD_R6 |
+| PJ6 | Y | AF LCD | LCD_R7 |
+| PJ7 | Y | AF LCD | LCD_G0 |
+| PJ8 | Y | AF LCD | LCD_G1 |
+| PJ9 | Y | AF LCD | LCD_G2 |
+| PJ10 | Y | AF LCD | LCD_G3 |
+| PJ11 | Y | AF LCD | LCD_G4 |
+| PJ12 | Y | AF LCD | LCD_B0 |
+| PJ13 | Y | AF LCD | LCD_B1 |
+| PJ14 | Y | AF LCD | LCD_B2 |
+| PJ15 | Y | AF LCD | LCD_B3 |
+| PK0 | Y | AF LCD | LCD_G5 |
+| PK1 | Y | AF LCD | LCD_G6 |
+| PK2 | Y | AF LCD | LCD_G7 |
+| PK3 | Y | AF LCD | LCD_B4 |
+| PK4 | Y | AF LCD | LCD_B5 |
+| PK5 | Y | AF LCD | LCD_B6 |
+| PK6 | Y | AF LCD | LCD_B7 |
+| PK7 | Y | AF LCD | LCD_DE |
