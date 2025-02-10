@@ -1,0 +1,13 @@
+# User Part
+obj/
+!*math.lib
+
+# Keil Part
+project/mdk-arm/DebugConfig
+project/mdk-arm/RTE
+*.uvguix.*
+*.uvoptx
+*.scvd
+
+# VS Code
+settings.json

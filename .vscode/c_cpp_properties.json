@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "GNU Arm",
+            "intelliSenseMode": "gcc-arm",
+            "includePath": [
+                "D:/software/arm gcc/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include",
+                "D:/software/arm gcc/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include-fixed",
+                "${workspaceFolder}",
+                "${workspaceFolder}/lib/CMSIS/Core/Include",
+                "${workspaceFolder}/lib/CMSIS/DSP/Include",
+                "${workspaceFolder}/lib/STM32H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+                "${workspaceFolder}/lib/STM32H7/Drivers/STM32H7xx_HAL_Driver/Inc",
+                "${workspaceFolder}/lib/STM32H7/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                "${workspaceFolder}/lib/STM32H7/Middlewares/ST/STM32_USB_Device_Library/Class/**",
+            ],
+            "defines": [
+                "USE_PWR_LDO_SUPPLY",
+                "USE_HAL_DRIVER",
+                "USE_FULL_LL_DRIVER",
+                "STM32H743xx",
+                "DEBUG"
+            ],
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
