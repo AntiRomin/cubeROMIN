@@ -9,3 +9,5 @@
 
     顺序的话就是I2C、UART、SPI、QSPI吧。
 3、移植betaflight那套任务调度器。
+
+学习路径：Keil开发、Makefile编译、学习Mbed OS、学习Tensor Flow Lite。
