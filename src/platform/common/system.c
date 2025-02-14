@@ -148,3 +148,7 @@ void delay(uint32_t ms)
     while (ms--)
         delayMicroseconds(1000);
 }
+
+void initialiseMemorySections(void)
+{
+}

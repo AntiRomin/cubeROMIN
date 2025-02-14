@@ -5,7 +5,7 @@
 // MPU part
 mpuRegion_t mpuRegions[] = {
     {
-        // Mark ITCM-RAM as read-only
+        //  Mark ITCM-RAM as read-only
         // "For Cortex®-M7, TCMs memories always behave as Non-cacheable, Non-shared normal memories, irrespective of the memory type attributes defined in the MPU for a memory region containing addresses held in the TCM"
         // See AN4838
         .start      = 0x00000000,

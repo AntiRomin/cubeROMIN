@@ -186,7 +186,7 @@ static void HandleStuckSysTick(void)
     }
 
     if (tickStart == tickEnd) {
-        // systemResetWithoutDisablingCaches();
+        systemResetWithoutDisablingCaches();
     }
 }
 
@@ -295,7 +295,7 @@ static void SystemClockHSE_Config(void)
 
 #ifdef USE_H7_HSE_TIMEOUT_WORKAROUND
     if (status == HAL_TIMEOUT) {
-        // systemResetWithoutDisablingCaches(); // DC - sometimes HSERDY gets stuck, waiting longer doesn't help.
+        systemResetWithoutDisablingCaches(); // DC - sometimes HSERDY gets stuck, waiting longer doesn't help.
     }
 #endif
 
@@ -598,6 +598,10 @@ void CRS_IRQHandler(void)
 }
 #endif
 
+static void initialiseD2MemorySections(void)
+{
+}
+
 void SystemInit (void)
 {
 #if defined (DATA_IN_D2_SRAM)
@@ -737,10 +741,12 @@ void SystemSetup(void)
 {
     memProtReset();
 
+    initialiseMemorySections();
+
 #if !defined(USE_EXST)
     // only stand-alone and bootloader firmware needs to do this.
     // if it's done in the EXST firmware as well as the BOOTLOADER firmware you get a reset loop.
-    // systemProcessResetReason();
+    systemProcessResetReason();
 #endif
 
 #ifdef USE_HAL_DRIVER
@@ -749,6 +755,8 @@ void SystemSetup(void)
 
     SystemClock_Config();
     SystemCoreClockUpdate();
+
+    initialiseD2MemorySections();
 
     // Configure MPU
 
@@ -974,7 +982,7 @@ void SystemInit_ExtMemCtl(void)
 
 #if defined(DATA_IN_ExtSRAM)
 /*-- GPIOs Configuration -----------------------------------------------------*/
-      /* Enable GPIOD, GPIOE, GPIOF and GPIOG interface clock */
+    /* Enable GPIOD, GPIOE, GPIOF and GPIOG interface clock */
     RCC->AHB4ENR   |= 0x00000078;
 
     /* Connect PDx pins to FMC Alternate function */

@@ -2,7 +2,7 @@
 #include "platform.h"
 
 #include "drivers/persistent.h"
-// #include "drivers/system.h"
+#include "drivers/system.h"
 
 #define PERSISTENT_OBJECT_MAGIC_VALUE (('C' << 24)|('B' << 16)|('R' << 8)|('M' << 0))
 

@@ -2,8 +2,9 @@
 
 #define NOINLINE __attribute__((noinline))
 
-// MCU specific platform from drivers/X
+#include "config/config.h"
+
+// MCU specific platform from platform/X
 #include "platform_mcu.h"
 
-#include "config/config.h"
 #include "common/utils.h"
