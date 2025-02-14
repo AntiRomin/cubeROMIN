@@ -53,7 +53,7 @@
 
 #include "platform.h"
 
-// #include "drivers/memprot.h"
+#include "drivers/memprot.h"
 #include "drivers/system.h"
 
 #include "system_stm32h7xx.h"
@@ -735,7 +735,7 @@ void SystemInit (void)
 
 void SystemSetup(void)
 {
-    // memProtReset();
+    memProtReset();
 
 #if !defined(USE_EXST)
     // only stand-alone and bootloader firmware needs to do this.
@@ -752,7 +752,7 @@ void SystemSetup(void)
 
     // Configure MPU
 
-    // memProtConfigure();
+    memProtConfigure(mpuRegions, mpuRegionCount);
 
     // Enable CPU L1-Cache
     SCB_EnableICache();

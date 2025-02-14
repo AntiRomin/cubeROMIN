@@ -477,6 +477,21 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\platform\system_stm32h7xx.c</FilePath>
             </File>
+            <File>
+              <FileName>memprot_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\memprot_hal.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>platform/config</GroupName>
+          <Files>
+            <File>
+              <FileName>config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\config\config.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -979,6 +994,21 @@
               <FileName>system_stm32h7xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\src\platform\system_stm32h7xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>memprot_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\memprot_hal.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>platform/config</GroupName>
+          <Files>
+            <File>
+              <FileName>config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\config\config.c</FilePath>
             </File>
           </Files>
         </Group>
