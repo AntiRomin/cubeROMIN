@@ -6,9 +6,17 @@
 
 #include "drivers/system.h"
 
+#include "core/tasks.h"
+
 #include "core/init.h"
 
 void init(void)
 {
     systemInit();
+
+    // Initialize task data as soon as possible. Has to be done before tasksInit()
+    // and any init code that may try to modify task behaviour before tasksInit().
+    tasksInitData();
+
+    tasksInit();
 }

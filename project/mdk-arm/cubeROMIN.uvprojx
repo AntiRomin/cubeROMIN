@@ -362,7 +362,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>1</umfTarg>
+            <umfTarg>0</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -371,7 +371,7 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>..\..\src\platform\link\arm\stm32_flash_h743_2m.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -459,10 +459,25 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\main\core\init.c</FilePath>
             </File>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\core\tasks.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>main/drivers</GroupName>
+        </Group>
+        <Group>
+          <GroupName>main/scheduler</GroupName>
+          <Files>
+            <File>
+              <FileName>scheduler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\scheduler\scheduler.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>platform</GroupName>
@@ -712,7 +727,7 @@
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
-            <RoSelD>4</RoSelD>
+            <RoSelD>3</RoSelD>
             <RwSelD>4</RwSelD>
             <CodeSel>0</CodeSel>
             <OptFeed>0</OptFeed>
@@ -858,7 +873,7 @@
               <MiscControls></MiscControls>
               <Define>USE_PWR_LDO_SUPPLY,USE_HAL_DRIVER,USE_FULL_LL_DRIVER,STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\..\lib\CMSIS\Core\Include;..\..\lib\STM32H7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\src\main;..\..\src\platform\startup;..\..\src\platform</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -880,7 +895,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>1</umfTarg>
+            <umfTarg>0</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -889,7 +904,7 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>..\..\src\platform\link\arm\stm32_flash_h743_2m.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -977,10 +992,25 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\main\core\init.c</FilePath>
             </File>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\core\tasks.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>main/drivers</GroupName>
+        </Group>
+        <Group>
+          <GroupName>main/scheduler</GroupName>
+          <Files>
+            <File>
+              <FileName>scheduler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\scheduler\scheduler.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>platform</GroupName>
