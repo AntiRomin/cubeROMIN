@@ -424,10 +424,11 @@ FAST_CODE void scheduler(void)
         taskCount++;
     }
 
-#if !defined(DEBUG)
-    UNUSED(schedulerStartTimeUs);
+#if defined(DEBUG)
+    UNUSED(taskExecutionTimeUs);
 #else
     UNUSED(taskExecutionTimeUs);
+    UNUSED(schedulerStartTimeUs);
 #endif
 
     scheduleCount++;

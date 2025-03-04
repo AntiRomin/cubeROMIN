@@ -6,8 +6,6 @@ void RCC_ClockCmd(rccPeriphTag_t periphTag, FunctionalState NewState)
     int tag = periphTag >> 5;
     uint32_t mask = 1 << (periphTag & 0x1f);
 
-#if defined(USE_HAL_DRIVER)
-
 // Note on "suffix" macro parameter:
 // ENR and RSTR naming conventions for buses with multiple registers per bus differs among MCU types.
 // ST decided to use AxBn{L,H}ENR convention for H7 which can be handled with simple "ENR" (or "RSTR") contatenation,

@@ -5,6 +5,8 @@
 #include "platform.h"
 
 #include "build/atomic.h"
+
+#include "drivers/io.h"
 #include "drivers/nvic.h"
 
 #include "drivers/system.h"
@@ -151,4 +153,16 @@ void delay(uint32_t ms)
 
 void initialiseMemorySections(void)
 {
+}
+
+static void unusedPinInit(IO_t io)
+{
+    if (IOIsFree(io)) {
+        IOConfigGPIO(io, IOCFG_IPU);
+    }
+}
+
+void unusedPinsInit(void)
+{
+    IOTraversePins(unusedPinInit);
 }

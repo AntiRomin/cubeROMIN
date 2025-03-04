@@ -338,9 +338,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_PWR_LDO_SUPPLY,USE_HAL_DRIVER,USE_FULL_LL_DRIVER,STM32H743xx,DEBUG</Define>
+              <Define>USE_PWR_LDO_SUPPLY,USE_HAL_DRIVER,USE_FULL_LL_DRIVER,STM32H743xx,DEBUG,MAX_MPU_REGIONS=16</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\lib\CMSIS\Core\Include;..\..\lib\STM32H7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\src\main;..\..\src\platform\startup;..\..\src\platform</IncludePath>
+              <IncludePath>..\..\lib\CMSIS\Core\Include;..\..\lib\STM32H7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\src\main;..\..\src\platform\startup;..\..\src\platform;..\..\src\platform\target;..\..\src\platform\common</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -468,6 +468,18 @@
         </Group>
         <Group>
           <GroupName>main/drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>io_preinit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\drivers\io_preinit.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\drivers\io.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>main/scheduler</GroupName>
@@ -496,6 +508,16 @@
               <FileName>memprot_hal.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\src\platform\memprot_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\io.c</FilePath>
+            </File>
+            <File>
+              <FileName>rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\rcc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -531,6 +553,11 @@
               <FileName>system.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\src\platform\common\system.c</FilePath>
+            </File>
+            <File>
+              <FileName>io_impl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\common\io_impl.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -871,9 +898,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_PWR_LDO_SUPPLY,USE_HAL_DRIVER,USE_FULL_LL_DRIVER,STM32H743xx</Define>
+              <Define>USE_PWR_LDO_SUPPLY,USE_HAL_DRIVER,USE_FULL_LL_DRIVER,STM32H743xx,MAX_MPU_REGIONS=16</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\lib\CMSIS\Core\Include;..\..\lib\STM32H7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\src\main;..\..\src\platform\startup;..\..\src\platform</IncludePath>
+              <IncludePath>..\..\lib\CMSIS\Core\Include;..\..\lib\STM32H7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\lib\STM32H7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\src\main;..\..\src\platform\startup;..\..\src\platform;..\..\src\platform\target;..\..\src\platform\common</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1001,6 +1028,18 @@
         </Group>
         <Group>
           <GroupName>main/drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>io_preinit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\drivers\io_preinit.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\main\drivers\io.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>main/scheduler</GroupName>
@@ -1029,6 +1068,16 @@
               <FileName>memprot_hal.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\src\platform\memprot_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\io.c</FilePath>
+            </File>
+            <File>
+              <FileName>rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\rcc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1064,6 +1113,11 @@
               <FileName>system.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\src\platform\common\system.c</FilePath>
+            </File>
+            <File>
+              <FileName>io_impl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\platform\common\io_impl.c</FilePath>
             </File>
           </Files>
         </Group>

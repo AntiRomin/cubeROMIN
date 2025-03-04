@@ -4,6 +4,7 @@
 
 #include "platform.h"
 
+#include "drivers/io.h"
 #include "drivers/system.h"
 
 #include "core/tasks.h"
@@ -17,6 +18,11 @@ void init(void)
     // Initialize task data as soon as possible. Has to be done before tasksInit()
     // and any init code that may try to modify task behaviour before tasksInit().
     tasksInitData();
+
+    // initialize IO (needed for all IO operations)
+    IOInitGlobal();
+
+    unusedPinsInit();
 
     tasksInit();
 }

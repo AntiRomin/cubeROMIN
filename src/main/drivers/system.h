@@ -25,3 +25,5 @@ void systemProcessResetReason(void);
 // memory
 void initialiseMemorySections(void);
 void systemResetWithoutDisablingCaches(void);
+
+void unusedPinsInit(void);
